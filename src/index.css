@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@theme {
+  --color-leaf-green: #2E7D32;
+  --color-light-green: #A5D6A7;
+  --color-water-blue: #0288D1;
+  --color-wheat-yellow: #F9A825;
+  --color-cream: #FFF8E1;
+  --color-dark-brown: #3E2723;
+
+  --font-heading: 'Nunito', sans-serif;
+  --font-body: 'Noto Sans', 'Noto Sans Arabic', sans-serif;
+}
+
+/* Base styles */
+html {
+  font-family: 'Noto Sans', 'Noto Sans Arabic', sans-serif;
+  font-size: 16px;
+  background-color: #FFF8E1;
+  color: #3E2723;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-color: #FFF8E1;
+  color: #3E2723;
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-tap-highlight-color: transparent;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Nunito', sans-serif;
+  color: #3E2723;
+}
+
+/* Design System Utilities */
+/* Cards: white, 16px radius, soft shadow, 16px padding */
+.card-khetix {
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  box-shadow: 0 4px 14px -1px rgba(62, 39, 35, 0.08), 0 2px 6px -1px rgba(62, 39, 35, 0.04);
+  padding: 16px;
+}
+
+/* Primary button: leaf green, 52px tall, full width on mobile, 18px text. Minimum tap target 48px */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: #2E7D32;
+  color: #FFFFFF;
+  height: 52px;
+  min-height: 52px;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  background-color: #256628;
+}
+
+.btn-primary:active {
+  transform: scale(0.99);
+}
+
+/* Secondary button: outlined green. All tap targets at least 48px. */
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: transparent;
+  color: #2E7D32;
+  border: 2px solid #2E7D32;
+  height: 48px;
+  min-height: 48px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  padding: 0 20px;
+}
+
+.btn-secondary:hover {
+  background-color: rgba(165, 214, 167, 0.25);
+}
+
+.btn-secondary:active {
+  transform: scale(0.99);
+}

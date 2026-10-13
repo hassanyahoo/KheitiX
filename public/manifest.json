@@ -1,0 +1,18 @@
+{
+  "name": "KhetiX - Right Water, At The Right Time",
+  "short_name": "KhetiX",
+  "description": "Smart irrigation decision engine for wheat and cotton farmers in Khairpur, Sindh, Pakistan.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFF8E1",
+  "theme_color": "#2E7D32",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
